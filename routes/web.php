@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); //default route laravel return views in resources
 });
+
+/* Route::get('/siswa', function (index) {
+    
+}); */
+
+
+/* Route::get('/siswa', 'SiswaController@index'); */
