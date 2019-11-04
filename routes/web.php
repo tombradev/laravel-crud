@@ -20,4 +20,4 @@ Route::get('/', function () {
 }); */
 
 
-/* Route::get('/siswa', 'SiswaController@index'); */
+Route::get('/siswa', 'SiswaController@index');

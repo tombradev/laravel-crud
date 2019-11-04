@@ -10,6 +10,7 @@ class SiswaController extends Controller
     public function index()
     {
         /* return 'ini list siswa - cara menyambungkan routes and controller - function and routes are connected'; */
-        return view('siswa.index');
+        $data_siswa = \App\Siswa::all(); //addnig namespace and model
+        return view('siswa.index', ['data_siswa' => $data_siswa]); //adding associative array
     }
 }
