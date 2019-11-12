@@ -7,6 +7,13 @@
 <body>
         {{-- <h1>Halo Laravel World Indonesia</h1> --}}
     <div class="container">
+              {{-- notifications --}}
+        @if(session('success'))
+          <div class="alert alert-success" role="alert">
+            {{session('success')}}
+          </div>
+        @endif
+
         <div class="row">
             <div class="col-6">
                     <h1>Halo Laravel World Indonesia</h1>
@@ -42,7 +49,6 @@
 {{-- {{dd($data_siswa)}} {{-- -- check if the data is going to the view from DB --}}  --}}
 
     {{--  Bootstrap component  --}}
-
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
