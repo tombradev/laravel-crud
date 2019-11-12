@@ -56,6 +56,7 @@
             </div>
             <div class="modal-body">
                     <form action="/siswa/create" method="POST">
+                        {{ csrf_field() }} {{-- test the token is in place --}}
                             <div class="form-group">
                               <label for="exampleInputEmail1">First Name</label>
                               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">

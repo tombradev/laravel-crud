@@ -13,4 +13,8 @@ class SiswaController extends Controller
         $data_siswa = \App\Siswa::all(); //addnig namespace and model
         return view('siswa.index', ['data_siswa' => $data_siswa]); //adding associative array
     }
+
+    public function create(){
+        return 'form submitted';
+    }
 }
