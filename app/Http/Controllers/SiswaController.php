@@ -15,6 +15,7 @@ class SiswaController extends Controller
     }
 
     public function create(Request $request){
-        return $request -> all();
+        /* return $request -> all(); /* to see all the json input from web view */ */
+        \App\Siswa::create($request->all());
     }
 }
