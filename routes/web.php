@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\SiswaController;
+
 Route::get('/', function () {
     return view('welcome'); //default route laravel return views in resources
 });
@@ -22,3 +24,6 @@ Route::get('/', function () {
 
 Route::get('/siswa', 'SiswaController@index');
 Route::post('/siswa/create', 'SiswaController@create'); //adding create routes
+
+// creating route for the dyniamically siswa id and arroed to siswacontroller
+Route::get('/siswa/{id}/edit','SiswaController@edit');

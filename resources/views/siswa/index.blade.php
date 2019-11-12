@@ -39,6 +39,7 @@
                         <td>{{$siswa->sex}}</td>
                         <td>{{$siswa->religion}}</td>
                         <td>{{$siswa->address}}</td>
+                        <td><a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">Edit</a></td>
                     </tr>
                     @endforeach
                 </table>
