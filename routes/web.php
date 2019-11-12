@@ -27,3 +27,6 @@ Route::post('/siswa/create', 'SiswaController@create'); //adding create routes
 
 // creating route for the dyniamically siswa id and arroed to siswacontroller
 Route::get('/siswa/{id}/edit','SiswaController@edit');
+// creating route for updatting fuction
+Route::post('/siswa/{id}/update','SiswaController@update');
+

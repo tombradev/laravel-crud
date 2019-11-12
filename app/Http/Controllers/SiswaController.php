@@ -23,6 +23,13 @@ class SiswaController extends Controller
     public function edit($id){
         $siswa = \App\Siswa::find($id);
         /* dd($siswa);  check if worked */
-        return view('siswa\edit');
+        return view('siswa\edit', ['siswa'=> $siswa]);
     }
+
+    public function update(Request $request,$id){
+        $siswa = \App\Siswa::find($id);
+        $siswa->update($request->all());
+        return redirect('/siswa')->with('success', 'Data Updated!');
+    }
+
 }
