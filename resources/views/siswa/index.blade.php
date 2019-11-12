@@ -59,26 +59,26 @@
                         {{ csrf_field() }} {{-- test the token is in place --}}
                             <div class="form-group">
                               <label for="exampleInputEmail1">First Name</label>
-                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+                              <input name="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Last Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+                                <input name="lastname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Sex</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select name="sex" class="form-control" id="exampleFormControlSelect1">
                                   <option>Male</option>
                                   <option>Female</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Religion</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Religion">
+                                <input name="religion" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Religion">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Address</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

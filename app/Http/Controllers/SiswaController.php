@@ -14,7 +14,7 @@ class SiswaController extends Controller
         return view('siswa.index', ['data_siswa' => $data_siswa]); //adding associative array
     }
 
-    public function create(){
-        return 'form submitted';
+    public function create(Request $request){
+        return $request -> all();
     }
 }
