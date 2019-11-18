@@ -30,3 +30,4 @@ Route::get('/siswa/{id}/edit','SiswaController@edit');
 // creating route for updatting fuction
 Route::post('/siswa/{id}/update','SiswaController@update');
 
+
