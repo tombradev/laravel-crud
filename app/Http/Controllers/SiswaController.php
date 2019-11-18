@@ -32,4 +32,10 @@ class SiswaController extends Controller
         return redirect('/siswa')->with('success', 'Data Updated!');
     }
 
+    public function delete($id){
+        $siswa = \App\Siswa::find($id);
+        $siswa->delete($siswa);
+        return redirect('/siswa')->with('success','data deleted');
+    }
+
 }

@@ -31,3 +31,6 @@ Route::get('/siswa/{id}/edit','SiswaController@edit');
 Route::post('/siswa/{id}/update','SiswaController@update');
 
 
+//deleting
+Route::get('/siswa/{id}/delete', 'SiswaController@delete');
+
